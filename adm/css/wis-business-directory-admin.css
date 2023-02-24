@@ -1,0 +1,61 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.tabs {
+    width: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+}
+ 
+.tabs li {
+	display: block;
+}
+
+.labels:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tabs label {
+	display: inline-block;
+	float: left;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: normal;
+    background: #ffffff;
+    cursor: pointer;
+}
+ 
+.tabs label:hover {
+    background: #cccfff;
+}
+ 
+.tab-content {
+    display: none;
+    width: 95%;
+    padding: 15px;
+
+    border:1px solid #ccc;
+    border-top: 5px solid #08C;
+    background-color:#ffffff;
+}
+
+
+.tabs input[type=radio] {
+    display:none;
+}
+ 
+[id^=tab]:checked ~ div[id^=tab-content] {
+    display: block;
+}
+
+[id^=tab]:checked ~ [id^=label]  {
+    background: #ffffff;
+    color: white;
+}
+
