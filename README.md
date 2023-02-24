@@ -1,4 +1,4 @@
-# wordpress-business-directory
+# wordpress-business-directory Test only
 === Plugin Name ===
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: http://www.cologne-host.eu
