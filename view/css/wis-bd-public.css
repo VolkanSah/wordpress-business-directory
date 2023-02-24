@@ -1,0 +1,114 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ * Columns: 2, Gutter Width: 0.5, Breakpoints: 480 
+ */
+/* Maps 
+----------------------------------------------------*/
+
+.map {
+height: 420px;
+width: 100%;
+float: center;
+       }
+
+article, aside, section {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+article, aside, section {
+    display:block;
+}
+.span1, .span2{
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.col{
+  margin-left: 0.5%;
+}
+
+.col:first-child {
+  margin-left:0;
+}
+
+.span1{
+  width: 49.75%;
+  
+}
+.span2{
+  width: 100%;
+  margin-left: 0;
+}
+
+#container, .inner{
+  margin: 0 auto;
+}
+
+#container{
+  clear: both;
+  padding-top: 10px;
+}
+
+.alt{
+  color: #fff;
+  color: rgba(255,255,255, 0.9);
+  letter-spacing: 0.05em;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Responsify Defaults */
+
+@media screen and (max-width: 768px){
+  nav .span1{
+    width: 100%;
+  }
+
+  .span1, article{
+    width: 100%;
+  }
+
+  .span1, aside{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #container, .inner{
+    width: 90%;
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ /* Add your styles for devices with a maximum width of 480 */
+}
+
+
+/* Micro Clearfix */
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    *zoom:1;
+}
+
